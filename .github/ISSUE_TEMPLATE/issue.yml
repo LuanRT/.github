@@ -3,7 +3,6 @@ title: "[VERSION] [TITLE]"
 description: Use this template to report a problem
 labels: [bug]
 body:
-
   - type: textarea
     id: reproduce-steps
     attributes:
@@ -29,7 +28,7 @@ body:
     id: expected-behavior
     attributes:
       label: Expected behavior
-      description: Describe the behavior you are expecting.
+      description: What did you expect to happen?
     validations:
       required: true
 
@@ -38,6 +37,17 @@ body:
     attributes:
       label: Current behavior
       description: What is the current behavior?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of the library are you running?
+      options:
+        - Default
+        - Edge
     validations:
       required: true
 
