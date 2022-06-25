@@ -1,0 +1,62 @@
+name: Issue Report
+description: Use this template to report a problem
+labels: [bug]
+body:
+
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: Steps to reproduce
+      description: Please provide detailed steps for reproducing the issue.
+      placeholder: |
+        Example:
+          1. Step 1
+          2. Step 2
+          3. You get it..
+    validations:
+      required: true
+  
+  - type: textarea
+    id: failure-logs
+    attributes:
+      label: Failure Logs
+      description: Include any relevant log snippets or files here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Describe the behavior you are expecting.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior
+      description: What is the current behavior?
+    validations:
+      required: true
+
+  - type: textarea
+    id: other-details
+    attributes:
+      label: Other details
+      placeholder: |
+        Additional details.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I am running the latest version.
+          required: false
+        - label: I checked the documentation and found no answer.
+          required: true      
+        - label: I have searched the existing issues and made sure this is not a duplicate.
+          required: true        
+        - label: I have provided sufficient information.
+          required: true
