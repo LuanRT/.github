@@ -20,7 +20,8 @@ body:
     id: failure-logs
     attributes:
       label: Failure Logs
-      description: Include any relevant log snippets or files here.
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
     validations:
       required: true
 
