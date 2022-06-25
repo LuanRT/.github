@@ -1,5 +1,5 @@
 name: Issue Report
-title: "[VERSION] [TITLE]"
+title: "<version> <title>"
 description: Use this template to report a problem
 labels: [bug]
 body:
